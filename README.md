@@ -5,3 +5,4 @@ run the playbooks command
 ```bash
 ansible-playbook playbook.yml -i ./hosts.yml
 ```
+
