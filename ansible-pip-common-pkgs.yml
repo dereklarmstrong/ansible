@@ -1,0 +1,26 @@
+---
+- hosts: localhost
+  connection: local
+  become: true
+  
+  tasks:
+    - name: install pip3 and common pkgs
+      apt:
+        state: latest
+        update_cache: true
+        pkg:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+          - python3-pip
+          - virtualenv
+          - python3-setuptools 
+    - name: install pip packages
+      pip:
+        name:
+          - pandas
+          - numpy
+          - matplotlib
+          - sqlalchemy
+          - psycopg2
