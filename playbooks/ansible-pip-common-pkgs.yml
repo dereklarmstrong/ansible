@@ -21,6 +21,5 @@
         name:
           - pandas
           - numpy
-          - matplotlib
           - sqlalchemy
           - psycopg2
