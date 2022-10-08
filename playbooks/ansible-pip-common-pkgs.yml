@@ -16,10 +16,12 @@
           - python3-pip
           - virtualenv
           - python3-setuptools 
-    - name: install pip packages
+    - name: pip install pandas
       pip:
-        name:
-          - pandas
-          - numpy
-          - sqlalchemy
-          - psycopg2
+        name: pandas
+    - name: pip install requests
+      pip:
+        name: requests
+    - name: pip install numpy
+      pip:
+        name: numpy
